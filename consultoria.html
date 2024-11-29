@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultoria Imobiliária</title>
+  <link rel="stylesheet" href="consultoria.css">
+  <style>
+    /* Estilo para a mensagem de sucesso */
+    .sucesso {
+      color: #28a745;
+      background-color: #d4edda;
+      padding: 10px;
+      margin: 20px 0;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      text-align: center;
+      display: none; /* Inicialmente oculto */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Consultoria Imobiliária</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Encontre o imóvel perfeito com a nossa ajuda!</h2>
+      <p>Especialistas em consultoria para compra, venda e aluguel de imóveis.</p>
+      <a href="#contato" class="btn">Entre em contato</a>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma empresa com anos de experiência no mercado imobiliário, oferecendo suporte personalizado para atender às suas necessidades.</p>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <ul class="servicos-lista">
+        <li>
+          <h3>Compra de Imóveis</h3>
+          <p>Auxiliamos na escolha e negociação do imóvel ideal.</p>
+        </li>
+        <li>
+          <h3>Venda de Imóveis</h3>
+          <p>Estratégias personalizadas para maximizar o valor do seu imóvel.</p>
+        </li>
+        <li>
+          <h3>Aluguel</h3>
+          <p>Encontre ou alugue imóveis com confiança e segurança.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      
+      <!-- Mensagem de sucesso -->
+      <p class="sucesso" id="mensagemSucesso">Sua mensagem foi enviada com sucesso! Obrigado por entrar em contato.</p>
+      
+      <form id="formContato" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Consultoria Imobiliária. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Captura o formulário e a mensagem de sucesso
+    const form = document.getElementById('formContato');
+    const mensagemSucesso = document.getElementById('mensagemSucesso');
+
+    // Adiciona evento de envio ao formulário
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Evita o envio real do formulário
+
+      // Simula o envio do formulário e exibe a mensagem de sucesso
+      mensagemSucesso.style.display = 'block';
+
+      // Limpa os campos do formulário
+      form.reset();
+
+      // Oculta a mensagem após alguns segundos (opcional)
+      setTimeout(() => {
+        mensagemSucesso.style.display = 'none';
+      }, 5000); // 5 segundos
+    });
+  </script>
+</body>
+</html>

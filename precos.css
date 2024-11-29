@@ -1,0 +1,77 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+}
+
+/* Seção de preços */
+.precos {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #000000; /* Fundo preto */
+}
+
+.precos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* Texto branco */
+}
+
+.precos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card de casa */
+.casa {
+    background-color: #7e7e7e; /* Fundo escuro para contraste */
+    border: 1px solid #444444; /* Borda cinza */
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra leve */
+    transition: transform 0.3s;
+}
+
+.casa:hover {
+    transform: translateY(-10px);
+}
+
+.casa img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.casa h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Texto branco */
+}
+
+.casa p {
+    font-size: 1rem;
+    color: #cccccc; /* Texto cinza claro */
+    margin-bottom: 10px;
+}
+
+.casa .preco {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00aaff; /* Azul claro para destaque */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .precos-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

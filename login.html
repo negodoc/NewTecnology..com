@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loogin.css">
+    <script src="login.js" defer></script>
+    <style>
+        /* Mensagem de sucesso */
+        .success-message {
+            color: #28a745;
+            background-color: #d4edda;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Caixa de login -->
+        <div class="login-box">
+            <h2>Bem-vindo</h2>
+            <p>Faça login para continuar</p>
+            <form action="#" method="POST" id="login-form">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+            <p class="register-link">
+                Não tem uma conta? <a href="#" id="show-register-form">Cadastre-se</a>
+            </p>
+        </div>
+
+        <!-- Caixa de cadastro -->
+        <div class="register-box" style="display: none;">
+            <h2>Crie sua conta</h2>
+            <p>Preencha os dados abaixo para se cadastrar</p>
+            <!-- Mensagem de sucesso -->
+            <div class="success-message" id="successMessage">Conta criada com sucesso!</div>
+            <form action="#" method="POST" id="register-form">
+                <div class="input-group">
+                    <label for="register-email">E-mail</label>
+                    <input type="email" id="register-email" name="register-email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Senha</label>
+                    <input type="password" id="register-password" name="register-password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirme a senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+            <p class="login-link">
+                Já tem uma conta? <a href="#" id="show-login-form">Faça login</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Seleção dos elementos
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const registerBox = document.querySelector('.register-box');
+        const loginBox = document.querySelector('.login-box');
+        const showRegisterForm = document.getElementById('show-register-form');
+        const showLoginForm = document.getElementById('show-login-form');
+        const successMessage = document.getElementById('successMessage');
+
+        // Exibe o formulário de cadastro
+        showRegisterForm.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginBox.style.display = 'none';
+            registerBox.style.display = 'block';
+            successMessage.style.display = 'none'; // Oculta mensagem ao mudar para o formulário de cadastro
+        });
+
+        // Exibe o formulário de login
+        showLoginForm.addEventListener('click', (e) => {
+            e.preventDefault();
+            registerBox.style.display = 'none';
+            loginBox.style.display = 'block';
+        });
+
+        // Manipula o envio do formulário de cadastro
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Evita o envio real do formulário
+
+            // Exibe a mensagem de sucesso
+            successMessage.style.display = 'block';
+
+            // Limpa os campos do formulário de cadastro
+            registerForm.reset();
+
+            // Oculta a mensagem após alguns segundos (opcional)
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+                registerBox.style.display = 'none';
+                loginBox.style.display = 'block';
+            }, 3000); // Exibe por 3 segundos e depois volta para o login
+        });
+
+        // Manipula o envio do formulário de login
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Evita o envio real do formulário
+
+            // Redireciona o usuário para a página inicial
+            window.location.href = "index.html"; // Substitua "index.html" pelo caminho da página inicial
+        });
+    </script>
+    
+    
+</body>
+</html>

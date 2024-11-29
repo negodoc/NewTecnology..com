@@ -1,0 +1,102 @@
+/* Configuração geral */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+}
+.header p {
+    font-size: 1.2rem;
+    color: #b0bec5;
+}
+
+/* Imagem principal */
+.image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+}
+
+/* Detalhes da casa */
+.details {
+    margin-top: 20px;
+}
+.details h2 {
+    font-size: 1.8rem;
+    color: #00e676;
+}
+.details p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Preços */
+.pricing p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+.pricing strong {
+    color: #ff9800;
+}
+
+/* Botões */
+.actions {
+    margin-top: 20px;
+}
+.actions .button {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.actions .comprar {
+    background-color: #d32f2f;
+    margin-right: 10px;
+}
+.actions .alugar {
+    background-color: #1976d2;
+}
+.actions .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #757575;
+}
+
+.image img {
+    display: block;
+    max-width: 70%; /* Reduzindo o tamanho para 70% da largura do container */
+    height: auto; /* Mantendo a proporção da imagem */
+    border-radius: 15px;
+    margin: 0 auto; /* Centralizando a imagem */
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+}

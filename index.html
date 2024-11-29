@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Technology - Imobiliária</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />                                                  
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <style>
+        /* Estilos adicionais para a seção inicial */
+        header {
+            background: url('img/banner-imobiliaria.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+            z-index: 1;
+        }
+
+        header .content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        header .cta {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        header .cta a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        header .cta a:hover {
+            background: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"> 
+                <samp>New Technology</samp>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="precos.html">Preços</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>     
+    </div>
+
+    <!-- Seção inicial -->
+    <header>
+        <div class="content">
+            <h1>Bem-vindo à New Technology Imóveis</h1>
+            <p>Descubra os imóveis mais sofisticados, desde apartamentos de luxo a casas à beira-mar. Realize o sonho de morar bem com a nossa equipe de especialistas.</p>
+            <div class="cta">
+                <a href="sobre.html">Saiba Mais</a>
+                <a href="comprar.html">Ver Imóveis</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>alguns imoveis</h2>
+            <div class="card-content">
+                <img src="img/ap luxo.png" alt="Interior de um apartamento luxuoso">
+                <img src="img/cs bairro.png" alt="Casa em um bairro residencial">
+                <img src="img/cs praia.png" alt="Casa à beira-mar com piscina">
+            </div>
+        </div>
+    </main>
+    <!-- Seção de Design de Casas -->
+<section class="home-design">
+    <h2>Casas que Transformam Sonhos em Realidade</h2>
+    <p>Explore nossas opções de design exclusivas e descubra o lar perfeito para você.</p>
+    <div class="design-gallery">
+        <div class="design-card">
+            <img src="img/cs moderna luxo.png" alt="Casa Moderna">
+            <h3>Casa Moderna</h3>
+            <p>Arquitetura contemporânea, espaços amplos e acabamento de alta qualidade.</p>
+            <a href="casa mosderna.html" class="btn">Ver Detalhes</a>
+        </div>
+        <div class="design-card">
+            <img src="img/cs rustica.png" alt="Casa Rústica">
+            <h3>Casa Rústica</h3>
+            <p>Estilo acolhedor com elementos naturais e um toque de elegância.</p>
+            <a href="casa rustica.html" class="btn">Ver Detalhes</a>
+        </div>
+        <div class="design-card">
+            <img src="img/cs praia 2.png" alt="Casa de Praia">
+            <h3>Casa de Praia</h3>
+            <p>Vista para o mar, ambientes iluminados e o som das ondas ao fundo.</p>
+            <a href="casa praia.html" class="btn">Ver Detalhes</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Seção de Depoimentos -->
+<section class="testimonials">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <img src="img/gabi.png" alt="Marina Sanvicente">
+            <h3>Marina Sanvicente</h3>
+            <p>
+                Com a ajuda da Renata, encontrei a cobertura dos meus sonhos, no bairro que sempre quis morar, mas nunca achava algo que fosse a minha cara. Ela foi cuidadosa, certeira e alinhada aos meus desejos, fazendo tudo com leveza e sensibilidade. Realizar esse sonho com o olhar dela foi único e inesquecível.
+            </p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="img/silva.png" alt="Silvia Berger">
+            <h3>Silvia Berger</h3>
+            <p>
+                Sabrina mudou minha visão sobre corretores. Com foco nas necessidades do cliente, dados de mercado e feedback dos visitantes, ela vendeu meu apartamento em poucos meses após mais de um ano sem sucesso.
+            </p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="img/horacio.png" alt="Horácio Ferreira">
+            <h3>Horácio Ferreira</h3>
+            <p>
+                Trabalhar com a Open Imóveis foi a melhor escolha! Conhecemos o André e o Matheus por indicação, e o profissionalismo deles fez toda a diferença. Com muita pesquisa e apoio da rede Pilar, tivemos confiança para fechar um ótimo negócio!
+            </p>
+           
+        </div>
+
+        <div class="testimonial-card">
+            <img src="img/adriana.png" alt="Adriana Ribarolli Parizotto">
+            <h3>Adriana Ribarolli Parizotto</h3>
+            <p>
+                Um amigo me apresentou o Edu como especialista na Vila Nova Conceição, e ele realmente é. Formado em direito, com vasto conhecimento imobiliário, é objetivo, assertivo e dedicado. Já fizemos negócios juntos, e ele sempre entrega com competência e alinhamento. Recomendo!
+            </p>
+        </div>
+    </div>
+</section>
+
+    <div class="position"></div>
+    <footer>
+        <div id="footer_conte">
+            <div id="footer_contacts">
+                <h1>New technology</h1>
+                <p>It's all about your dreams.</p>
+                <div id="_social_media">
+                    <a href="https://www.instagram.com" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.whatsapp.com" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer_list">
+                <li><h3>Blog</h3></li>
+                <li><a href="tech.html" class="footer-link">Tech</a></li>
+                <li><a href="adventures.html" class="footer-link">Adventures</a></li>
+                <li><a href="music.html" class="footer-link">Music</a></li>
+            </ul>
+
+            <ul class="footer_list">
+                <li><h3>Products</h3></li>
+                <li><a href="app.html" class="footer-link">App</a></li>
+                <li><a href="desktop.html" class="footer-link">Desktop</a></li>
+                <li><a href="cloud.html" class="footer-link">Cloud</a></li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+                <p>Enter your e-mail to get notified about our new solutions.</p>
+                <div id="input_group">
+                    <input type="email" id="email" placeholder="Your e-mail">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169; 2024 All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
